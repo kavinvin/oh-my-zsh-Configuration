@@ -2,10 +2,9 @@
 eval red='$FG[203]'
 eval green='$FG[042]'
 eval yellow='$FG[220]'
-# eval blue='$FG[045]'
 eval blue='$FG[075]'
 eval magenta='$FG[147]'
-eval cyan='$FG[037]'
+eval cyan='$FG[051]'
 eval white='$FG[231]'
 eval grey='$FG[145]'
 
@@ -36,7 +35,7 @@ ZSH_THEME_GIT_PROMPT_CLEAN=" "
 ZSH_THEME_GIT_PROMPT_ADDED="%{$green%}(Added) "
 ZSH_THEME_GIT_PROMPT_MODIFIED="%{$yellow%}(Modified) "
 ZSH_THEME_GIT_PROMPT_DELETED="%{$red%}(Deleted) "
-ZSH_THEME_GIT_PROMPT_RENAMED="%{$blue%}(Renamed) "
+ZSH_THEME_GIT_PROMPT_RENAMED="%{$yellow%}(Renamed) "
 ZSH_THEME_GIT_PROMPT_UNMERGED="%{$cyan%}(Unmerged) "
 ZSH_THEME_GIT_PROMPT_AHEAD="%{$magenta%}(Ahead) "
 
