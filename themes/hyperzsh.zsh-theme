@@ -14,7 +14,14 @@ PROMPT='$(_user_host)%{$yellow%}%c $(git_prompt_info)%{$reset_color%}$(git_promp
 local _return_status="%{$reset_color%}"
 
 function _user_host() {
-    echo "%{$red%}%n%{$reset_color%}%{$reset_color%} in " 
+  if [[ -n $SSH_CONNECTION ]]; then
+    me="%n%{$reset_color%}@%{$green%}%m"
+  elif [[ $LOGNAME != $USER ]]; then
+    me="%n"
+  fi
+  if [[ -n $me ]]; then
+    echo "%{$red%}$me%{$reset_color%}%{$reset_color%} in "
+  fi
 }
 
 # Determine if there is an active Python virtual environment
