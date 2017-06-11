@@ -9,7 +9,7 @@ eval white='$FG[231]'
 eval grey='$FG[145]'
 
 # The prompt
-PROMPT='$(_user_host)%{$yellow%}%c $(git_prompt_info)%{$reset_color%}$(git_prompt_status)${_return_status}> '
+PROMPT='$(_user_host)%{$yellow%}%c $(git_prompt_info)%{$reset_color%}$(git_prompt_status)${_return_status}$ '
 
 local _return_status="%{$reset_color%}"
 
