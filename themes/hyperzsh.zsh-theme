@@ -18,10 +18,10 @@ function _user_host() {
     me="%n%{$reset_color%}@%{$green%}%m"
   elif [[ $LOGNAME != $USER ]]; then
     me="%n"
+  else
+    me="%n"
   fi
-  if [[ -n $me ]]; then
-    echo "%{$red%}$me%{$reset_color%}%{$reset_color%} in "
-  fi
+  echo "%{$red%}$me%{$reset_color%}%{$reset_color%} in "
 }
 
 # Determine if there is an active Python virtual environment
